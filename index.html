@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/awards.css">
+	</head>
+    <body>
+        <div class="row">
+            <div class="col-xs-10">
+                This app will create the organization structure and users for a new partner within this instance. 10 courses along with 5 admins/instructors/students
+                <br>Contact <a href="mailto:jordan.snider@d2l.com">jordan.snider@d2l.com</a> for technical support & troubleshooting. 
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 0px;">
+            <div class="col-xs-6">Name of the partner:</div>
+            <div class="col-xs-6"><input id="partnerName" type="text" class="vui-input vui-input-focus" value="focus value"/></div>
+        </div>
+
+        <div class="row">
+        	<div class="col-xs-6">
+        	</div>
+        	<div class="col-xs-6">
+        		<button class="btn vui-button-primary"  data-toggle="modal" onclick="createPartner()">Create New Partner</button>
+                <div class="col-xs-6" id="creationStatusFlag"></div>
+        	</div>
+        </div>
+<script src="js/global-superagent-d2l-session-auth.min.js"></script> 
+<script src="js/csval-lib.js"></script> 
+<script type="text/javascript" src="js/csval-lib-courses.js"></script>
+<script src="js/jquery-2.1.1.js"></script> 
+<script src="js/awards.js"></script>
+</body>
+</html>
